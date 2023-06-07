@@ -1,0 +1,23 @@
+.navbar {
+	padding-top: 1em !important;
+}
+.logo {
+	max-width: 7%;
+	max-height: 7%;
+}
+.btn:hover {
+	color: gray !important;
+}
+.gradient {
+	border: none;
+	border-radius: 10px;
+	padding: 0.6em 1.3em;
+	background: rgb(131, 58, 180);
+	background: linear-gradient(90deg, rgba(131, 58, 180, 1) 10%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 85%);
+}
+.gradient:hover {
+	transition: 0.3s;
+	color: black;
+	background: rgb(252, 176, 69);
+	background: linear-gradient(90deg, rgba(252, 176, 69, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(131, 58, 180, 1) 100%);
+}
