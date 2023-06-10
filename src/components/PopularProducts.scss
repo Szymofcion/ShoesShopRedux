@@ -21,17 +21,17 @@
   background-position: center;
   // background-image: url(../assets/slick-shoes-1.png);
 }
-.btn-add-cart {
-  margin: 0 1em;
-  background-color: rgb(48, 48, 231);
-  color: #fff;
-  border: none;
-  padding: 0.4em 0.4em;
-  border-radius: 10px;
-}
 .descriptions-shoes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  .btn-add-cart {
+    font-size: 0.9em;
+    margin: 0 1em;
+    background-color: rgb(48, 48, 231);
+    color: #fff;
+    border: none;
+    padding: 0.4em 0.7em;
+    border-radius: 10px;
+  }
 }

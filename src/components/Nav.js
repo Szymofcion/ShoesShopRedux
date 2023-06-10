@@ -1,23 +1,25 @@
 import logo from "../assets/nike-logo.png";
+import { BsFillCartFill } from "react-icons/bs";
 import "./Nav.scss";
 const Nav = () => {
   return (
     <nav className="navbar " data-bs-theme="dark">
-      <form className="container-fluid justify-content-between d-flex justify-content-center ">
-        <img className="logo mt-3 ms-5" src={logo} alt="logo"></img>
+      <form className="container-fluid justify-content-between d-flex justify-content-center mt-4 ">
+        <img className="logo " src={logo} alt="logo"></img>
         <div>
-          <button className="btn me-5 " type="button">
+          <button className="btn mx-3 fs-5 " type="button">
             Home
           </button>
-          <button className="btn me-5 " type="button">
+          <button className="btn mx-3 fs-5 " type="button">
             Popular products
           </button>
-          <button className="btn me-5 " type="button">
+          <button className="btn mx-3 fs-5  " type="button">
             About
           </button>
         </div>
-        <div>
-          <button className="me-5 gradient " type="button">
+        <div className="d-flex align-items-center">
+          <BsFillCartFill className="fs-4 cart" />
+          <button className="gradient ms-4 fs-5 " type="button">
             Contact Us
           </button>
         </div>

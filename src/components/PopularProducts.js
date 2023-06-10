@@ -34,12 +34,10 @@ const PopularProductsSlick = () => {
                 <BsFillStarFill className="text-warning" /> <span>(4.5)</span>
               </div>
               <p>Nike Air 1</p>
-              <p>
-                $50
-                <button type="button" class="btn-add-cart">
-                  Add to Cart
-                </button>
-              </p>
+              <span>$50</span>
+              <button type="button" class="btn-add-cart">
+                Add to Cart
+              </button>
             </div>
           </div>
           <div className="px-2">

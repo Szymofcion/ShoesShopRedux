@@ -1,7 +1,7 @@
 import Nav from "./Nav";
 import Banner from "./Banner";
 import PopularProductsSlick from "./PopularProducts";
-
+import AboutUs from './AboutUs'
 import "./Main.scss";
 
 const Main = () => {
@@ -10,6 +10,7 @@ const Main = () => {
       <Nav />
       <Banner />
       <PopularProductsSlick />
+	  <AboutUs/>
     </section>
   );
 };
