@@ -10,7 +10,64 @@ import "./PopularProducts.scss";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+const DUMMY_SHOES = [
+  {
+    id: "1",
+    rate: "4.9",
+    name: "Nicke air",
+    price: "$50",
+    img: shoes1,
+  },
+  {
+    id: "2",
+    rate: "4.9",
+    name: "Nicke air",
+    price: "$50",
+    img: shoes2,
+  },
+  {
+    id: "3",
+    rate: "4.9",
+    name: "Nicke air",
+    price: "$50",
+    img: shoes3,
+  },
+  {
+    id: "4",
+    rate: "4.9",
+    name: "Nicke air",
+    price: "$50",
+    img: shoes4,
+  },
+  {
+    id: "5",
+    rate: "4.9",
+    name: "Nicke air",
+    price: "$50",
+    img: shoes5,
+  },
+];
+
 const PopularProductsSlick = () => {
+  const shoesList = DUMMY_SHOES.map((shoes) => (
+    <div key={shoes.id} className="px-2">
+      <div className="background-shoes">
+        <img className="shoes-1" src={shoes.img} alt="but"></img>
+      </div>
+      <div className="descriptions-shoes">
+        <div>
+          <BsFillStarFill className="text-warning" /> <span>(4.5)</span>
+        </div>
+        <p>{shoes.name}</p>
+        <span>{shoes.price}</span>
+        <button type="button" class="btn-add-cart">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  ));
+
   const settings = {
     dots: true,
     infinite: true,
@@ -25,7 +82,9 @@ const PopularProductsSlick = () => {
           Popular <span className="text-danger">Products</span>
         </h2>
         <Slider {...settings}>
-          <div className="px-2">
+          {shoesList}
+
+          {/* <div className="px-2">
             <div className="background-shoes">
               <img className="shoes-1" src={shoes1} alt="but"></img>
             </div>
@@ -39,8 +98,9 @@ const PopularProductsSlick = () => {
                 Add to Cart
               </button>
             </div>
-          </div>
-          <div className="px-2">
+          </div> */}
+
+          {/* <div className="px-2">
             <div className="background-shoes">
               <img className="shoes-1" src={shoes2} alt="but"></img>
             </div>
@@ -106,8 +166,8 @@ const PopularProductsSlick = () => {
                   Add to Cart
                 </button>
               </p>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
         </Slider>
       </div>
     </section>

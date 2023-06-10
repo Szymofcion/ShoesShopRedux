@@ -1,5 +1,5 @@
 import logo from "../assets/nike-logo.png";
-import { BsFillCartFill } from "react-icons/bs";
+import CartButton from "../UI/CartButton";
 import "./Nav.scss";
 const Nav = () => {
   return (
@@ -18,7 +18,7 @@ const Nav = () => {
           </button>
         </div>
         <div className="d-flex align-items-center">
-          <BsFillCartFill className="fs-4 cart" />
+          <CartButton />
           <button className="gradient ms-4 fs-5 " type="button">
             Contact Us
           </button>
