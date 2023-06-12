@@ -1,23 +1,26 @@
 import Modal from "./Modal";
+import "./Cart.scss";
 
 const Cart = () => {
   const cartItems = (
     <div>
       {[{ id: "1", name: "nike", amount: 1, price: 20 + "$" }].map((item) => (
-        <div>{item.name}</div>
+        <div className="cart__container-info">
+          {item.name} {item.amount} {item.price}
+        </div>
       ))}
     </div>
   );
   return (
-    <Modal>
+    <Modal >
       <div className="cart__container">
-        {cartItems}
         <div className="cart__container-total">
-          <div>Total amount</div>
-          <div>35.62</div>
+          <h4>Your Shopping Cart</h4>
         </div>
+        {cartItems}
         <div className="cart__container-actions">
-          <button className="button">Close</button>
+          <p>Total: 20$</p>
+          <button className="button" >Close</button>
         </div>
       </div>
     </Modal>
