@@ -14,7 +14,8 @@ const Cart = ({ hideCartHandler, open }) => {
     <div>
       {[{ id: "1", name: "nike", amount: 1, price: 20 + "$" }].map((item) => (
         <div key={item.id} className="cart__container-info">
-          {item.name} {item.amount} {item.price}
+          <span>{item.name}</span> <span>{item.amount}</span>
+          <span>{item.price}</span>
         </div>
       ))}
     </div>
@@ -26,9 +27,7 @@ const Cart = ({ hideCartHandler, open }) => {
         onClose={hideCartHandler}
         aria-labelledby="responsive-dialog-title"
       >
-        <DialogTitle id="responsive-dialog-title">
-          {"Use Google's location service?"}
-        </DialogTitle>
+        <DialogTitle id="responsive-dialog-title">Your Cart</DialogTitle>
         <DialogContent>
           <DialogContentText>{cartItems}</DialogContentText>
         </DialogContent>

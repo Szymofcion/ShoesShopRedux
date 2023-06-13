@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 import Nav from "./Nav";
-import Banner from "./Banner";
-import PopularProductsSlick from "./PopularProducts";
+import Banner from "../UI/Banner";
+import PopularProductsSlick from "../UI/PopularProducts";
 import Cart from "../UI/Cart";
 // import AboutUs from './AboutUs'
 import "./Main.scss";
