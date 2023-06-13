@@ -2,9 +2,9 @@ import { BsFillCartFill } from "react-icons/bs";
 
 import "./CartButton.scss";
 
-const CartButton = ({onShow}) => {
+const CartButton = ({showCartHandler}) => {
   return (
-    <button className="cart" onClick={onShow}>
+    <button className="cart" onClick={showCartHandler}>
       <span className="cart-icon">
         <BsFillCartFill />
       </span>

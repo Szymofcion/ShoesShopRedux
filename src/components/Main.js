@@ -12,16 +12,16 @@ const Main = () => {
   const showCartHandler = () => {
     setVisibleModal(true);
   };
-  // const hideCartHandler = () => {
-  //   setVisibleModal(false);
-  // };
+  const hideCartHandler = () => {
+    setVisibleModal(false);
+  };
 
   return (
     <section className="wrapper">
-      <Nav onShow={showCartHandler}/>
+      <Nav showCartHandler={showCartHandler} />
       <Banner />
       <PopularProductsSlick />
-      {visibleModal && <Cart />}
+      <Cart hideCartHandler={hideCartHandler} open={visibleModal} />
       {/* <AboutUs/> */}
     </section>
   );

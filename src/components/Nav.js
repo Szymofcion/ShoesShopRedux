@@ -1,7 +1,7 @@
 import logo from "../assets/nike-logo.png";
 import CartButton from "../UI/CartButton";
 import "./Nav.scss";
-const Nav = ({onShow}) => {
+const Nav = ({showCartHandler}) => {
   return (
     <nav className="navbar " data-bs-theme="dark">
       <div className="container-fluid justify-content-between d-flex justify-content-center mt-4 ">
@@ -18,7 +18,7 @@ const Nav = ({onShow}) => {
           </button>
         </div>
         <div className="d-flex align-items-center">
-          <CartButton onShow={onShow} />
+          <CartButton showCartHandler={showCartHandler} />
           <button className="gradient ms-4 fs-5 " type="button">
             Contact Us
           </button>
