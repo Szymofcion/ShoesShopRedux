@@ -4,6 +4,23 @@ body {
   background-image: url("./assets/stars-background.jpg");
 }
 
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgba(128, 128, 128, 0.425);
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 8px;
+  background: linear-gradient(45deg, #00aeff, #a68eff);
+}
+/* background: linear-gradient(
+  90deg,
+  rgba(131, 58, 180, 1) 10%,
+  rgba(252, 176, 69, 1) 85%
+); */
+
 /* .App {
   text-align: center;
 }

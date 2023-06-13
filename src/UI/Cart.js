@@ -26,6 +26,7 @@ const Cart = ({ hideCartHandler, open }) => {
         open={open}
         onClose={hideCartHandler}
         aria-labelledby="responsive-dialog-title"
+        className="dailog"
       >
         <DialogTitle id="responsive-dialog-title">Your Cart</DialogTitle>
         <DialogContent>
