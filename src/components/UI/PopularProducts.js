@@ -19,35 +19,35 @@ const DUMMY_SHOES = [
     id: "1",
     rate: "4.9",
     name: "Nicke air",
-    price: "$50",
+    price: 50,
     img: shoes1,
   },
   {
     id: "2",
     rate: "4.9",
     name: "Nicke air",
-    price: "$90",
+    price: 90,
     img: shoes2,
   },
   {
     id: "3",
     rate: "4.9",
     name: "Nicke air",
-    price: "$150",
+    price: 150,
     img: shoes3,
   },
   {
     id: "4",
     rate: "4.9",
     name: "Nicke air",
-    price: "$540",
+    price: 540,
     img: shoes4,
   },
   {
     id: "5",
     rate: "4.9",
     name: "Nicke air",
-    price: "$30",
+    price: 30,
     img: shoes5,
   },
 ];
@@ -61,6 +61,8 @@ const PopularProductsSlick = () => {
       amount: amount,
       price: DUMMY_SHOES.price,
     });
+    console.log(amount);
+    
   };
 
   const shoesList = DUMMY_SHOES.map((shoes) => (
@@ -74,7 +76,7 @@ const PopularProductsSlick = () => {
         </div>
         <p>{shoes.name}</p>
         <span>{shoes.price}</span>
-        <FormPopularProduct addToCartHandler={addToCartHandler} />
+        <FormPopularProduct onAddToCart={addToCartHandler} />
       </div>
     </div>
   ));
