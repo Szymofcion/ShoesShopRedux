@@ -1,22 +1,21 @@
-import { useRef } from "react";
+import { useState } from "react";
 
 const FormPopularProduct = ({ addToCartHandler }) => {
-  const amountButtonRef = useRef();
+  const [amountShoes, setAmountShoes] = useState(0);
 
   const submitHandler = (e) => {
     e.preventDefault();
-    const enteredAmount = amountButtonRef.current.value;
-    const enteredAmountNumber = +enteredAmount;
-    addToCartHandler(enteredAmountNumber);
+    setAmountShoes((prev) => prev + 1);
+    addToCartHandler(amountShoes);
   };
   return (
-    <form onSubmit={submitHandler}>
+    <form>
       <button
-        ref={amountButtonRef}
+        onClick={submitHandler}
         type="button"
         className="btn-add-cart"
         id="amount"
-        defaultValue="1"
+        value={amountShoes}
       >
         Add To Cart
       </button>

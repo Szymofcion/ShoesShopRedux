@@ -26,40 +26,40 @@ const DUMMY_SHOES = [
     id: "2",
     rate: "4.9",
     name: "Nicke air",
-    price: "$50",
+    price: "$90",
     img: shoes2,
   },
   {
     id: "3",
     rate: "4.9",
     name: "Nicke air",
-    price: "$50",
+    price: "$150",
     img: shoes3,
   },
   {
     id: "4",
     rate: "4.9",
     name: "Nicke air",
-    price: "$50",
+    price: "$540",
     img: shoes4,
   },
   {
     id: "5",
     rate: "4.9",
     name: "Nicke air",
-    price: "$50",
+    price: "$30",
     img: shoes5,
   },
 ];
 
-const PopularProductsSlick = (props) => {
+const PopularProductsSlick = () => {
   const cartCtx = useContext(CartContext);
   const addToCartHandler = (amount) => {
     cartCtx.addItem({
-      id: props.id,
-      name: props.name,
+      id: DUMMY_SHOES.id,
+      name: DUMMY_SHOES.name,
       amount: amount,
-      price: props.price,
+      price: DUMMY_SHOES.price,
     });
   };
 
