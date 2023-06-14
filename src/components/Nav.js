@@ -1,5 +1,5 @@
 import logo from "../assets/nike-logo.png";
-import CartButton from "../UI/CartButton";
+import CartButton from "./UI/CartButton";
 import "./Nav.scss";
 const Nav = ({showCartHandler}) => {
   return (

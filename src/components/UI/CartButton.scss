@@ -4,13 +4,7 @@
   justify-content: center;
   cursor: pointer;
   border: none;
-  background: rgb(131, 58, 180);
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 10%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 85%
-  );
+  background: linear-gradient(90deg, #00aeff, #a68eff);
   color: white;
   border-radius: 10px;
   font-weight: bold;
@@ -19,13 +13,9 @@
 
 .cart:hover,
 .cart:active {
+  transition: 0.3s;
+  color: black;
   background: rgb(252, 176, 69);
-  background: linear-gradient(
-    90deg,
-    rgba(252, 176, 69, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(131, 58, 180, 1) 100%
-  );
 }
 
 .cart-icon {
@@ -34,6 +24,7 @@
 }
 
 .badge {
+  color: black;
   background-color: #dc3545;
   padding: 0.5rem;
   margin-left: 1rem;
@@ -42,7 +33,7 @@
 
 .cart:hover .badge,
 .cart:active .badge {
-  background-color: #92320c;
+color: black;
 }
 
 .bump {

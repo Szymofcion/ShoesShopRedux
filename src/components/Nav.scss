@@ -14,24 +14,14 @@
   border: none;
   border-radius: 10px;
   padding: 0.6em 1.3em;
-  background: rgb(131, 58, 180);
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 10%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 85%
-  );
+  background: linear-gradient(90deg, #00aeff, #a68eff);
 }
-.gradient:hover {
+.gradient:hover
+.gradient:active {
   transition: 0.3s;
   color: black;
   background: rgb(252, 176, 69);
-  background: linear-gradient(
-    90deg,
-    rgba(252, 176, 69, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(131, 58, 180, 1) 100%
-  );
+
 }
 .cart {
   cursor: pointer;

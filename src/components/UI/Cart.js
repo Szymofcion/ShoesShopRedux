@@ -10,6 +10,9 @@ import DialogTitle from "@mui/material/DialogTitle";
 // };
 
 const Cart = ({ hideCartHandler, open }) => {
+
+
+
   const cartItems = (
     <div>
       {[{ id: "1", name: "nike", amount: 1, price: 20 + "$" }].map((item) => (

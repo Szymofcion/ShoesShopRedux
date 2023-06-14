@@ -1,9 +1,10 @@
 import { useState } from "react";
 
 import Nav from "./Nav";
-import Banner from "../UI/Banner";
-import PopularProductsSlick from "../UI/PopularProducts";
-import Cart from "../UI/Cart";
+import Banner from "../components/UI/Banner";
+import PopularProductsSlick from "../components/UI/PopularProducts";
+import Cart from "../components/UI/Cart";
+// import CartProvider from "../store/CartProvider";
 // import AboutUs from './AboutUs'
 import "./Main.scss";
 const Main = () => {
@@ -19,7 +20,7 @@ const Main = () => {
   return (
     <section className="wrapper">
       <Nav showCartHandler={showCartHandler} />
-      <Banner />
+      {/* <Banner /> */}
       <PopularProductsSlick />
       <Cart hideCartHandler={hideCartHandler} open={visibleModal} />
       {/* <AboutUs/> */}
