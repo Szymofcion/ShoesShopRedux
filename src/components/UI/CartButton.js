@@ -7,9 +7,7 @@ import "./CartButton.scss";
 
 const CartButton = ({ showCartHandler }) => {
   const cartCtx = useContext(CartContext);
-  console.log(cartCtx);
   
-
   const numberOfCartItems = cartCtx.items.reduce((currentNumber, item) => {
     return currentNumber + item.amount;
   }, 0);

@@ -1,11 +1,24 @@
 import { useState, useRef } from "react";
-
+import { useContext } from "react";
 import Input from "./Input";
-
+import CartContext from "../../store/cart-context";
 import "./FormPopularProduct.scss";
 const FormPopularProduct = (props) => {
   const [amountIsValid, setAmountIsValid] = useState(true);
   const amountInputRef = useRef();
+
+  const cartCtx = useContext(CartContext);
+  const addToCartHandler = (amount) => {
+    console.log(amount);
+
+    cartCtx.addItem({
+      id: props.id,
+      name: props.name,
+      amount: amount,
+      price: props.price,
+    });
+    console.log(cartCtx);
+  };
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -21,7 +34,7 @@ const FormPopularProduct = (props) => {
       return;
     }
 
-    props.onAddToCart(enteredAmountNumber);
+    addToCartHandler(enteredAmountNumber);
   };
 
   return (

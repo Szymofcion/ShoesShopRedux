@@ -1,5 +1,4 @@
 import { BsFillStarFill } from "react-icons/bs";
-import { useContext } from "react";
 
 import Slider from "react-slick";
 import shoes1 from "../../assets/slick-shoes-1.png";
@@ -8,7 +7,6 @@ import shoes3 from "../../assets/slick-shoes-3.png";
 import shoes4 from "../../assets/slick-shoes-4.png";
 import shoes5 from "../../assets/slick-shoes-5.png";
 import FormPopularProduct from "./FormPopularProduct";
-import CartContext from "../../store/cart-context";
 
 import "./PopularProducts.scss";
 import "slick-carousel/slick/slick.css";
@@ -17,53 +15,42 @@ import "slick-carousel/slick/slick-theme.css";
 const DUMMY_SHOES = [
   {
     id: "1",
-    rate: "4.9",
+    rate: "4.1",
     name: "Nicke air",
-    price: 50,
+    price: 50.99,
     img: shoes1,
   },
   {
     id: "2",
-    rate: "4.9",
+    rate: "4.5",
     name: "Nicke air",
-    price: 90,
+    price: 90.99,
     img: shoes2,
   },
   {
     id: "3",
-    rate: "4.9",
+    rate: "4.4",
     name: "Nicke air",
-    price: 150,
+    price: 150.99,
     img: shoes3,
   },
   {
     id: "4",
-    rate: "4.9",
+    rate: "4.8",
     name: "Nicke air",
-    price: 540,
+    price: 540.99,
     img: shoes4,
   },
   {
     id: "5",
-    rate: "4.9",
+    rate: "4.7",
     name: "Nicke air",
-    price: 30,
+    price: 30.99,
     img: shoes5,
   },
 ];
 
 const PopularProductsSlick = () => {
-  const cartCtx = useContext(CartContext);
-  const addToCartHandler = (amount) => {
-    cartCtx.addItem({
-      id: DUMMY_SHOES.id,
-      name: DUMMY_SHOES.name,
-      amount: amount,
-      price: DUMMY_SHOES.price,
-    });
-    console.log(amount);
-  };
-
   const shoesList = DUMMY_SHOES.map((shoes) => (
     <div key={shoes.id} id={shoes.id} className="px-2">
       <div className="background-shoes">
@@ -74,8 +61,13 @@ const PopularProductsSlick = () => {
           <BsFillStarFill className="text-warning" /> <span>(4.5)</span>
         </div>
         <p className="m-0">{shoes.name}</p>
-        <span >$ {shoes.price}</span>
-        <FormPopularProduct onAddToCart={addToCartHandler} />
+        <span>$ {shoes.price}</span>
+        <FormPopularProduct
+          id={shoes.id}
+          key={shoes.id}
+          name={shoes.name}
+          price={shoes.price}
+        />
       </div>
     </div>
   ));

@@ -1,11 +1,12 @@
 import { useContext } from "react";
-
 import "./Cart.scss";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+
+import CartItems from "./CartItems";
 import CartContext from "../../store/cart-context";
 
 // const Backdrop = () => {
@@ -14,16 +15,6 @@ import CartContext from "../../store/cart-context";
 
 const Cart = ({ hideCartHandler, open }) => {
   const cartCtx = useContext(CartContext);
-
-  const totalAmount = `$${cartCtx.totalAmount}`;
-
-  const cartItems = (
-    <>
-      {cartCtx.items.map((item) => (
-        <span>{item.name}</span>
-      ))}
-    </>
-  );
   return (
     <Dialog
       open={open}
@@ -34,8 +25,14 @@ const Cart = ({ hideCartHandler, open }) => {
       <DialogTitle id="responsive-dialog-title">Your Cart</DialogTitle>
       <DialogContent>
         <DialogContentText>
-          {totalAmount}
-          {cartItems}
+          {cartCtx.items.map((item) => (
+            <CartItems
+              key={item.id}
+              name={item.name}
+              amount={item.amount}
+              price={item.price}
+            ></CartItems>
+          ))}
         </DialogContentText>
       </DialogContent>
       <DialogActions></DialogActions>
