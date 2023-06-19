@@ -15,6 +15,11 @@ import CartContext from "../../store/cart-context";
 
 const Cart = ({ hideCartHandler, open }) => {
   const cartCtx = useContext(CartContext);
+
+  const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
+
+  const cartItemRemoveHandler = (id) => {};
+
   return (
     <Dialog
       open={open}
@@ -31,8 +36,10 @@ const Cart = ({ hideCartHandler, open }) => {
               name={item.name}
               amount={item.amount}
               price={item.price}
+              onRemove={cartItemRemoveHandler.bind(null, item)}
             ></CartItems>
           ))}
+          <h2>{totalAmount}</h2>
         </DialogContentText>
       </DialogContent>
       <DialogActions></DialogActions>

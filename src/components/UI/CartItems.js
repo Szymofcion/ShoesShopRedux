@@ -1,14 +1,10 @@
-import { useContext } from "react";
-
-import CartContext from "../../store/cart-context";
-
 const CartItems = (props) => {
-  const cartCtx = useContext(CartContext);
-  const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
   return (
     <>
-      {props.name}
-    
+      <li>
+        {props.name} {props.amount}
+      </li>
+      <button onClick={props.onRemove}>-</button>
     </>
   );
 };
