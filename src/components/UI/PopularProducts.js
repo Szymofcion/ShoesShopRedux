@@ -62,7 +62,6 @@ const PopularProductsSlick = () => {
       price: DUMMY_SHOES.price,
     });
     console.log(amount);
-    
   };
 
   const shoesList = DUMMY_SHOES.map((shoes) => (
@@ -74,8 +73,8 @@ const PopularProductsSlick = () => {
         <div>
           <BsFillStarFill className="text-warning" /> <span>(4.5)</span>
         </div>
-        <p>{shoes.name}</p>
-        <span>{shoes.price}</span>
+        <p className="m-0">{shoes.name}</p>
+        <span >$ {shoes.price}</span>
         <FormPopularProduct onAddToCart={addToCartHandler} />
       </div>
     </div>

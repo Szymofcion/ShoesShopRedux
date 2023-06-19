@@ -1,5 +1,8 @@
 import { useState, useRef } from "react";
+
 import Input from "./Input";
+
+import "./FormPopularProduct.scss";
 const FormPopularProduct = (props) => {
   const [amountIsValid, setAmountIsValid] = useState(true);
   const amountInputRef = useRef();
@@ -22,7 +25,7 @@ const FormPopularProduct = (props) => {
   };
 
   return (
-    <form onSubmit={submitHandler}>
+    <form className="form-amount mt-2" onSubmit={submitHandler}>
       <Input
         label="Abount"
         ref={amountInputRef}
@@ -35,8 +38,7 @@ const FormPopularProduct = (props) => {
           defaultValue: "1",
         }}
       />
-      <button>+ Add</button>
-
+      <button className="gradient p-2">+ Add</button>
       {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
     </form>
   );
