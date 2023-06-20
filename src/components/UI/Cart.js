@@ -18,7 +18,9 @@ const Cart = ({ hideCartHandler, open }) => {
 
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
 
-  const cartItemRemoveHandler = (id) => {};
+  const cartItemRemoveHandler = (id) => {
+    cartCtx.removeItem(id);
+  };
 
   return (
     <Dialog
@@ -36,9 +38,10 @@ const Cart = ({ hideCartHandler, open }) => {
               name={item.name}
               amount={item.amount}
               price={item.price}
-              onRemove={cartItemRemoveHandler.bind(null, item)}
+              cartItemRemoveHandler={cartItemRemoveHandler.bind(null, item.id)}
             ></CartItems>
           ))}
+
           <h2>{totalAmount}</h2>
         </DialogContentText>
       </DialogContent>

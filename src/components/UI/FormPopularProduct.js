@@ -9,7 +9,7 @@ const FormPopularProduct = (props) => {
 
   const cartCtx = useContext(CartContext);
   const addToCartHandler = (amount) => {
-    console.log(amount);
+  
 
     cartCtx.addItem({
       id: props.id,
@@ -17,7 +17,7 @@ const FormPopularProduct = (props) => {
       amount: amount,
       price: props.price,
     });
-    console.log(cartCtx);
+    // console.log(cartCtx);
   };
 
   const submitHandler = (e) => {

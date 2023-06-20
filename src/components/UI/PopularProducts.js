@@ -11,8 +11,7 @@ import FormPopularProduct from "./FormPopularProduct";
 import "./PopularProducts.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useContext } from "react";
-import CartContext from "../../store/cart-context";
+
 
 const DUMMY_SHOES = [
   {
@@ -55,7 +54,7 @@ const DUMMY_SHOES = [
 const PopularProductsSlick = () => {
 
   const shoesList = DUMMY_SHOES.map((shoes) => (
-    <div key={shoes.id} id={shoes.id} className="px-2">
+    <div key={shoes.id}  className="px-2">
       <div className="background-shoes">
         <img className="shoes-1" src={shoes.img} alt="but"></img>
       </div>

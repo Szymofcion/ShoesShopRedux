@@ -2,9 +2,9 @@ const CartItems = (props) => {
   return (
     <>
       <li>
-        {props.name} {props.amount}
+        {props.name} {props.amount} {props.price}
       </li>
-      <button onClick={props.onRemove}>-</button>
+      <button onClick={props.cartItemRemoveHandler}>-</button>
     </>
   );
 };
