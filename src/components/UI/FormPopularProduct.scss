@@ -5,3 +5,16 @@
 .input-amount {
   margin-right: 1em;
 }
+.gradient-btn {
+  z-index: 100;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6em 1.3em;
+  background: linear-gradient(90deg, #00aeff, #a68eff);
+}
+.gradient-btn:hover .gradient-btn:active {
+  transition: 0.3s;
+  color: black;
+  background: rgb(252, 176, 69);
+}

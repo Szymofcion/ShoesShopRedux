@@ -51,7 +51,7 @@ const FormPopularProduct = (props) => {
           defaultValue: "1",
         }}
       />
-      <button className="gradient p-2">+ Add</button>
+      <button className="gradient-btn text-light">+ Add</button>
       {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
     </form>
   );
