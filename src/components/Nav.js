@@ -1,11 +1,24 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-
+import { useState, useEffect } from "react";
 import logo from "../assets/nike-logo.png";
 import CartButton from "./UI/CartButton";
 import "./Nav.scss";
 const Nav = ({ showCartHandler }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <nav className="navbar" data-bs-theme="dark">
+    <nav className={`navbar${isScrolled ? ' scrolled' : ''}`} data-bs-theme="dark">
       <div className="container-fluid justify-content-between d-flex justify-content-center mt-4 ">
         <img className="logo " src={logo} alt="logo"></img>
         <div className="nav-link-container">
