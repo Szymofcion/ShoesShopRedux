@@ -1,0 +1,38 @@
+.contact {
+  position: relative;
+  background-color: rgb(99, 94, 94);
+  overflow: hidden;
+  &__form,
+  &__form-top,
+  &__form-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  &__form-labe {
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  &__form-input {
+  }
+  &__form-textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    min-height: 150px;
+  }
+  &__form-btn {
+    width: 15%;
+    padding: 0.4em;
+  }
+  &__form-btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #00aeff, #a68eff);
+  }
+  &__form-btn:hover,
+  &__form-btn:active {
+    transition: 0.3s;
+    background: rgb(252, 176, 69);
+  }
+}

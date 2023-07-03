@@ -7,6 +7,7 @@ import Cart from "../components/UI/Cart";
 import CartProvider from "../store/CartProvider";
 import AboutUs from "./AboutUs";
 import "./Main.scss";
+import ContactForm from "./ContactForm";
 const Main = () => {
   const [visibleModal, setVisibleModal] = useState(false);
 
@@ -30,8 +31,7 @@ const Main = () => {
         />
       </CartProvider>
       <AboutUs />
-      <Banner />
-      <Banner />
+      <ContactForm />
     </section>
   );
 };
