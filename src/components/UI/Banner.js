@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./Banner.scss";
 import { BsFillStarFill } from "react-icons/bs";
 const Banner = () => {
@@ -14,7 +15,9 @@ const Banner = () => {
           great shoe. It will be your one and only great shoe
         </p>
         <div>
-          <button className="me-5 gradient text-light">Shop Now</button>
+          <a href="#" className="me-5 btn-banner text-light">
+            Shop Now
+          </a>
         </div>
         <div className="bottom-left-banner">
           <div>

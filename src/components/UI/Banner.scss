@@ -19,6 +19,27 @@
   background-image: url(../../assets/pngegg.png);
   transform: rotate(347deg);
 }
+
+.btn-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(90deg, #00aeff, #a68eff);
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+}
+
+.btn-banner:hover,
+.btn-banner:active {
+  transition: 0.3s;
+  background: rgb(252, 176, 69);
+}
+
 .title-banner {
   font-size: 5rem;
 }

@@ -1,0 +1,9 @@
+.input__container {
+  &-none {
+    color: #fff;
+    background: none;
+    padding: 0.2em;
+    border: 1px solid grey;
+    border-radius: 10px;
+  }
+}

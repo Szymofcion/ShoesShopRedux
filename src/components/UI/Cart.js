@@ -1,11 +1,11 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import "./Cart.scss";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-
+import Button from "@mui/material/Button";
 import CartItems from "./CartItems";
 import CartContext from "../../store/cart-context";
 
@@ -13,7 +13,10 @@ import CartContext from "../../store/cart-context";
 //   return <div className="backdrop"></div>;
 // };
 
-const Cart = ({ hideCartHandler, open }) => {
+const Cart = ({ hideCartHandler, open, close }) => {
+  const handleClose = () => {
+    close(false);
+  };
   const cartCtx = useContext(CartContext);
 
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
@@ -39,13 +42,18 @@ const Cart = ({ hideCartHandler, open }) => {
               amount={item.amount}
               price={item.price}
               cartItemRemoveHandler={cartItemRemoveHandler.bind(null, item.id)}
+              onClose={hideCartHandler}
             ></CartItems>
           ))}
 
           <h2>{totalAmount}</h2>
         </DialogContentText>
       </DialogContent>
-      <DialogActions></DialogActions>
+      <DialogActions>
+        <Button autoFocus onClick={handleClose}>
+          Cancel
+        </Button>
+      </DialogActions>
     </Dialog>
   );
 };

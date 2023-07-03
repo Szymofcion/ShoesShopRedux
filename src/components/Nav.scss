@@ -5,8 +5,36 @@
   max-width: 7%;
   max-height: 7%;
 }
-.btn:hover {
+.nav-link-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 1em;
+  z-index: 100;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::before,
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  border-bottom: 2px solid #fff;
+  transition: 0.3s;
+}
+.nav-link::before {
+  right: 0;
+}
+.nav-link::after {
+  left: 0;
+}
+.nav-link:hover {
   color: gray !important;
+}
+.nav-link:hover::before,
+.nav-link:hover::after {
+  width: 50%;
 }
 .gradient {
   z-index: 100;
@@ -16,12 +44,10 @@
   padding: 0.6em 1.3em;
   background: linear-gradient(90deg, #00aeff, #a68eff);
 }
-.gradient:hover
-.gradient:active {
+.gradient:hover .gradient:active {
   transition: 0.3s;
   color: black;
   background: rgb(252, 176, 69);
-
 }
 .cart {
   cursor: pointer;

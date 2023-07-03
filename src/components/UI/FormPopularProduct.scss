@@ -1,6 +1,7 @@
 .form-amount {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .input-amount {
   margin-right: 1em;
@@ -10,12 +11,14 @@
   cursor: pointer;
   border: none;
   border-radius: 10px;
-  padding: 0.6em 1.3em;
+  padding: 0;
+  width: 4em;
+  height: 2.2em;
+  margin-left: 0.5em;
   background: linear-gradient(90deg, #00aeff, #a68eff);
-  
 }
-.gradient-btn:hover .gradient-btn:active {
+.gradient-btn:hover,
+.gradient-btn:active {
   transition: 0.3s;
-  color: black;
   background: rgb(252, 176, 69);
 }

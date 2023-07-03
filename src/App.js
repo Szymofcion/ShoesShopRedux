@@ -1,5 +1,5 @@
 import "./App.css";
-import Main from "./components/Main";
+import Main from "./section/Main";
 function App() {
   return (
     <div className="App">

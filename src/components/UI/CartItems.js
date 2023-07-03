@@ -5,6 +5,7 @@ const CartItems = (props) => {
         {props.name} {props.amount} {props.price}
       </li>
       <button onClick={props.cartItemRemoveHandler}>-</button>
+      
     </>
   );
 };

@@ -9,6 +9,7 @@
   border-radius: 10px;
   font-weight: bold;
   padding: 0.8rem 1rem;
+  transition: all .35s;
 }
 
 .cart:hover,
@@ -33,27 +34,5 @@
 
 .cart:hover .badge,
 .cart:active .badge {
-color: black;
-}
-
-.bump {
-  animation: bump 300ms ease-out;
-}
-
-@keyframes bump {
-  0% {
-    transform: scale(1);
-  }
-  10% {
-    transform: scale(0.9);
-  }
-  30% {
-    transform: scale(1.1);
-  }
-  50% {
-    transform: scale(1.15);
-  }
-  100% {
-    transform: scale(1);
-  }
+  color: black;
 }

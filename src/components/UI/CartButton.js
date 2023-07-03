@@ -19,6 +19,7 @@ const CartButton = ({ showCartHandler }) => {
       </span>
       <span>Your Cart</span>
       <span className="badge">{numberOfCartItems}</span>
+      
     </button>
   );
 };
