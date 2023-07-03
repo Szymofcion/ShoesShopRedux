@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ShoesShopRedux/static/css/main.79434fe8.css",
+    "main.js": "/ShoesShopRedux/static/js/main.3cbbe698.js",
+    "static/media/about-us.jpg": "/ShoesShopRedux/static/media/about-us.0551f64df9a318e1419a.jpg",
+    "static/media/slick-shoes-4.png": "/ShoesShopRedux/static/media/slick-shoes-4.5d5c2235ca6660bb2b12.png",
+    "static/media/slick-shoes-2.png": "/ShoesShopRedux/static/media/slick-shoes-2.bdc4d6c70c27539364ef.png",
+    "static/media/slick-shoes-1.png": "/ShoesShopRedux/static/media/slick-shoes-1.344cb4d4e0182a02271a.png",
+    "static/media/slick-shoes-3.png": "/ShoesShopRedux/static/media/slick-shoes-3.3cd5b2f218ce9f9b5358.png",
+    "static/media/slick-shoes-5.png": "/ShoesShopRedux/static/media/slick-shoes-5.2cf48a7e395ecb3cb956.png",
+    "static/media/pngegg.png": "/ShoesShopRedux/static/media/pngegg.8e1f8dbe32e75608543a.png",
+    "static/media/nike-logo.png": "/ShoesShopRedux/static/media/nike-logo.fcb92d2d4d8a0539ed81.png",
+    "static/media/stars-background.jpg": "/ShoesShopRedux/static/media/stars-background.72ddaac1fd8dd89052d7.jpg",
+    "static/media/slick.svg": "/ShoesShopRedux/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ShoesShopRedux/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ShoesShopRedux/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ShoesShopRedux/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/ShoesShopRedux/index.html",
+    "main.79434fe8.css.map": "/ShoesShopRedux/static/css/main.79434fe8.css.map",
+    "main.3cbbe698.js.map": "/ShoesShopRedux/static/js/main.3cbbe698.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79434fe8.css",
+    "static/js/main.3cbbe698.js"
+  ]
+}
