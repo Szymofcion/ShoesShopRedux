@@ -1,24 +1,32 @@
 .contact {
   position: relative;
-  background-color: rgb(99, 94, 94);
+  background-color: rgba(32, 28, 28, 0.452);
   overflow: hidden;
+  border-radius: 10px;
+  color: #fff;
   &__form,
   &__form-top,
   &__form-bottom {
+    padding: 1.5em;
     display: flex;
     flex-direction: column;
   }
-  &__form-labe {
+  &__form-label {
     margin-bottom: 0.5em;
     text-transform: uppercase;
   }
   &__form-input {
+    background-color: rgba(39, 36, 36, 0.438);
+    color: #fff;
   }
   &__form-textarea {
     max-width: 100%;
     min-width: 100%;
     width: 100%;
     min-height: 150px;
+    margin-bottom: 0.5em;
+    background-color: rgba(39, 36, 36, 0.438);
+    color: #fff;
   }
   &__form-btn {
     width: 15%;
@@ -34,5 +42,10 @@
   &__form-btn:active {
     transition: 0.3s;
     background: rgb(252, 176, 69);
+  }
+  &__form-counter {
+    display: flex;
+    justify-content: end;
+    font-size: 1.2rem;
   }
 }

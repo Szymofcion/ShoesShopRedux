@@ -6,8 +6,10 @@ import PopularProducts from "./PopularProducts";
 import Cart from "../components/UI/Cart";
 import CartProvider from "../store/CartProvider";
 import AboutUs from "./AboutUs";
-import "./Main.scss";
 import ContactForm from "./ContactForm";
+import Footer from "./Footer";
+
+import "./Main.scss";
 const Main = () => {
   const [visibleModal, setVisibleModal] = useState(false);
 
@@ -19,7 +21,7 @@ const Main = () => {
   };
 
   return (
-    <section className="wrapper">
+    <section id="home" className="wrapper">
       <CartProvider>
         <Nav showCartHandler={showCartHandler} />
         <Banner />
@@ -32,6 +34,7 @@ const Main = () => {
       </CartProvider>
       <AboutUs />
       <ContactForm />
+      <Footer />
     </section>
   );
 };

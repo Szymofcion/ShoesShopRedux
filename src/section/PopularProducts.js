@@ -80,7 +80,7 @@ const PopularProductsSlick = () => {
     slidesToScroll: 1,
   };
   return (
-    <section>
+    <section id="popularProducts">
       <div>
         <h2>
           Popular <span className="text-danger">Products</span>

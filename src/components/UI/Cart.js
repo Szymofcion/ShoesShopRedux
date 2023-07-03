@@ -30,10 +30,12 @@ const Cart = ({ hideCartHandler, open, close }) => {
       open={open}
       onClose={hideCartHandler}
       aria-labelledby="responsive-dialog-title"
-      className="dailog"
+      className="dailog "
     >
-      <DialogTitle id="responsive-dialog-title">Your Cart</DialogTitle>
-      <DialogContent>
+      <DialogTitle className="dialog-background" id="responsive-dialog-title">
+        Your Cart
+      </DialogTitle>
+      <DialogContent className="dialog-background">
         <DialogContentText>
           {cartCtx.items.map((item) => (
             <CartItems
@@ -49,10 +51,12 @@ const Cart = ({ hideCartHandler, open, close }) => {
           <h2>{totalAmount}</h2>
         </DialogContentText>
       </DialogContent>
-      <DialogActions>
-        <Button autoFocus onClick={handleClose}>
-          Cancel
-        </Button>
+      <DialogActions className="dialog-background">
+        <button  className="dialog-btn">
+          <Button autoFocus onClick={handleClose}>
+            Cancel
+          </Button>
+        </button>
       </DialogActions>
     </Dialog>
   );

@@ -1,0 +1,37 @@
+.footer {
+  margin-top: 2em;
+  background-color: #2e2e2e63;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  &__box {
+    padding: 1em;
+    &-title {
+      text-transform: uppercase;
+    }
+    &-social {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &-link {
+      color: #fff;
+      font-size: 2rem;
+      text-decoration: none;
+      transition: color, 0.3s;
+      &:hover {
+        color: rgb(170, 165, 165);
+      }
+    }
+  }
+}
+
+.number-text {
+  font-size: 1.6rem;
+  margin-bottom: 1em;
+}
+
+.bottom-text {
+  font-size: 1.2rem;
+ padding-bottom: 0.5em;
+}

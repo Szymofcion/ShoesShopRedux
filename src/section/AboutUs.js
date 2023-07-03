@@ -5,7 +5,7 @@ import { BsChatLeftHeart, BsShieldShaded, BsTrophy } from "react-icons/bs";
 import "./AboutUs.scss";
 const AboutUs = () => {
   return (
-    <section>
+    <section id="aboutUs">
       <h1>About us</h1>
       <div className="aboutUs-container">
         <div className="aboutUs-container-img">

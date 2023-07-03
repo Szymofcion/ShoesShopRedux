@@ -1,5 +1,13 @@
 .navbar {
+  position: sticky !important;
   padding-top: 1em !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.shadow{
+  background-color: rgba(0, 0, 0, 0.733);
 }
 .logo {
   max-width: 7%;
