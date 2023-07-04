@@ -36,7 +36,7 @@ const AboutUs = () => {
             </span>
           </div>
         </div>
-        <div className="aboutUs-container">
+        <div className="aboutUs-container ">
           <div className="aboutUs-container-index">
             <BsTrophy className="aboutUs-icon" />
             <h3 className="fs-2 mb-3">Global Awards</h3>
@@ -47,7 +47,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="aboutUs-container">
-          <div className="aboutUs-container-index">
+          <div className="aboutUs-container-index ">
             <BsShieldShaded className="aboutUs-icon" />
             <h3 className="fs-2 mb-3">Secure Payment</h3>
             <span className="description-bottom">

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import "./Cart.scss";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
