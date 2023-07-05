@@ -1,6 +1,6 @@
 .navbar {
   position: sticky !important;
- 
+
   padding-bottom: 1em;
   padding-top: 0;
   top: 0;
@@ -67,7 +67,7 @@
 }
 #nav-icon1 {
   width: 60px;
-  height: 30px;
+  height: 40px;
   position: relative;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -132,32 +132,28 @@
   transform: rotate(-135deg);
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .nav-link-container {
-    font-size: 1rem;
-  }
-  .logo {
-    max-width: 9%;
-    max-height: 9%;
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
-  .logo {
-    max-width: 17%;
-    max-height: 17%;
-  }
-  .nav-link-container {
-    font-size: 1.2rem;
-  }
-}
-
-// Large devices (desktops, 992px and up)
 @media (min-width: 1250px) {
   .nav-link-container {
     font-size: 1.5rem;
   }
-  
+}
+@media (max-width: 768px) {
+  .logo {
+    max-width: 11%;
+    max-height: 11%;
+  }
+  .mobile-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.2em;
+    .nav-link {
+      margin: 0.5em 0.5em;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
 }

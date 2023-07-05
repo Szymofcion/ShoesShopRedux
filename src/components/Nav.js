@@ -3,11 +3,12 @@ import { useState, useEffect } from "react";
 import logo from "../assets/nike-logo.png";
 import CartButton from "./UI/CartButton";
 import "./Nav.scss";
-
+import Hamburger from "hamburger-react";
 const Nav = ({ showCartHandler }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,9 +45,7 @@ const Nav = ({ showCartHandler }) => {
         <img className="logo" src={logo} alt="logo" />
         {isMobile ? (
           <button id="nav-icon1" className="menu-toggle" onClick={toggleMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
+            <Hamburger toggled={isOpen} toggle={setOpen} />
           </button>
         ) : (
           <div className={`nav-link-container${isMenuOpen ? " open" : ""}`}>
@@ -70,16 +69,16 @@ const Nav = ({ showCartHandler }) => {
       </div>
       {isMobile && isMenuOpen && (
         <div className="mobile-menu">
-          <a href="/" className="nav-link" onClick={toggleMenu}>
+          <a href="#home" className="nav-link" onClick={toggleMenu}>
             Home
           </a>
-          <a href="/popular" className="nav-link" onClick={toggleMenu}>
+          <a href="#popularProduct" className="nav-link" onClick={toggleMenu}>
             Popular products
           </a>
-          <a href="/about" className="nav-link" onClick={toggleMenu}>
+          <a href="#aboutUs" className="nav-link" onClick={toggleMenu}>
             About
           </a>
-          <a href="/contact" className="nav-link" onClick={toggleMenu}>
+          <a href="#contact" className="nav-link" onClick={toggleMenu}>
             Contact Us
           </a>
         </div>
