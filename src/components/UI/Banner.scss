@@ -9,14 +9,11 @@
   width: 50%;
 }
 .shoes-banner {
-  top: -5%;
-  left: 25%;
   position: absolute;
-  scale: 0.7;
-  width: 80%;
+  left: 20%;
+  top: -15%;
+  scale: 0.5;
   height: 100%;
-  background-repeat: no-repeat;
-  background-image: url(../../assets/pngegg.png);
   transform: rotate(347deg);
 }
 
@@ -71,4 +68,59 @@
 }
 .blur {
   filter: blur(2px);
+}
+@media (max-width: 1400px) {
+  .title-banner {
+    font-size: 4.1rem;
+  }
+  .rigth-banner {
+    .shoes-banner {
+      left: 7%;
+      top: -15%;
+      scale: 0.45;
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .title-banner {
+    font-size: 4.1rem;
+  }
+}
+@media (max-width: 1250px) {
+  .title-banner {
+    font-size: 3.7rem;
+  }
+  .rigth-banner {
+    .shoes-banner {
+      left: -5%;
+      top: -15%;
+      scale: 0.4;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .title-banner {
+  }
+  .rigth-banner {
+    .shoes-banner {
+      left: -16%;
+      top: -15%;
+      scale: 0.38;
+    }
+  }
+}
+@media (max-width: 850px) {
+  .rigth-banner {
+    .shoes-banner {
+      left: -20%;
+      top: -15%;
+      scale: 0.38;
+    }
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
 }

@@ -1,8 +1,13 @@
 body {
   height: 100vh;
   background-image: url("./assets/stars-background.jpg");
+  overflow-x: hidden
 }
-
+@media (max-width: 1250px) {
+  body {
+  padding: 0 2em;
+  }
+}
 ::-webkit-scrollbar{
   width: 15px;
 }

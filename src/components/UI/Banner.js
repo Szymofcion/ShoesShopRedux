@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./Banner.scss";
 import { BsFillStarFill } from "react-icons/bs";
+import BannerImg from "../../assets/pngegg.png";
 const Banner = () => {
   return (
     <section className="banner-container d-flex justify-content-center">
@@ -35,7 +36,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="rigth-banner">
-        <div className="shoes-banner"></div>
+        <img src={BannerImg} alt="banner-img" className="shoes-banner"></img>
         <div className="container-special-offer">
           <div className="border-special-offer">
             <div className="blur"></div>
