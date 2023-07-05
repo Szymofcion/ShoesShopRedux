@@ -9,7 +9,7 @@
   border-radius: 10px;
   font-weight: bold;
   padding: 0.8rem 1rem;
-  transition: all .35s;
+  transition: all 0.35s;
 }
 
 .cart:hover,
@@ -35,4 +35,18 @@
 .cart:hover .badge,
 .cart:active .badge {
   color: black;
+}
+
+@media (max-width: 768px) {
+  .cart {
+    font-size: 0.8rem;
+    padding: 0.8rem 0.5rem;
+  }
+}
+
+
+@media (min-width: 1250px) {
+  .cart {
+    padding: 0.8rem 1rem;
+  }
 }
