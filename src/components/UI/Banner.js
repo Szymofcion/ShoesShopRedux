@@ -21,8 +21,8 @@ const Banner = () => {
           </a>
         </div>
         <div className="bottom-left-banner">
-          <div>
-            <span className="text-danger ">4.9 </span> <span> | </span>
+          <div className="opinion-container-rwd">
+            <span className="text-danger  ">4.9 </span> <span> | </span>
             <span>
               <BsFillStarFill className="text-warning" />
               <BsFillStarFill className="text-warning" />
@@ -31,7 +31,7 @@ const Banner = () => {
               <BsFillStarFill className="text-warning" />
             </span>
             <br />
-            <span>200k Tital Review</span>
+            <span className="total-rwd">200k Tital Review</span>
           </div>
         </div>
       </div>
@@ -40,8 +40,8 @@ const Banner = () => {
         <div className="container-special-offer">
           <div className="border-special-offer">
             <div className="blur"></div>
-            <p className="fw-bold fs-4">Get up to 30% off</p>
-            <p className="text-secondary">
+            <p className="rwd-special-offer fw-bold">Get up to 30% off</p>
+            <p className="rwd-special-offer-description text-secondary">
               You can get up to 30 percent discount from here.
             </p>
           </div>
