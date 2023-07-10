@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./ContactForm.scss";
 const ContactForm = () => {
-  const [text, setText] = useState(null);
+  const [text, setText] = useState(0);
   const handleTextChange = (e) => {
     setText(e.target.value.length);
   };
