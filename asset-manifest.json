@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ShoesShopRedux/static/css/main.5602b4df.css",
-    "main.js": "/ShoesShopRedux/static/js/main.40a5b0f3.js",
+    "main.js": "/ShoesShopRedux/static/js/main.90378d5f.js",
     "static/media/about-us.jpg": "/ShoesShopRedux/static/media/about-us.0551f64df9a318e1419a.jpg",
     "static/media/slick-shoes-4.png": "/ShoesShopRedux/static/media/slick-shoes-4.5d5c2235ca6660bb2b12.png",
     "static/media/slick-shoes-2.png": "/ShoesShopRedux/static/media/slick-shoes-2.bdc4d6c70c27539364ef.png",
@@ -17,10 +17,10 @@
     "static/media/slick.woff": "/ShoesShopRedux/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ShoesShopRedux/index.html",
     "main.5602b4df.css.map": "/ShoesShopRedux/static/css/main.5602b4df.css.map",
-    "main.40a5b0f3.js.map": "/ShoesShopRedux/static/js/main.40a5b0f3.js.map"
+    "main.90378d5f.js.map": "/ShoesShopRedux/static/js/main.90378d5f.js.map"
   },
   "entrypoints": [
     "static/css/main.5602b4df.css",
-    "static/js/main.40a5b0f3.js"
+    "static/js/main.90378d5f.js"
   ]
 }
