@@ -55,7 +55,7 @@ const Footer = () => {
             <BsFillTelephoneFill /> +48 643 453 344
           </p>
           <hr />
-          <p className="bottom-text">{data} Tropical Island</p>
+          <p className="bottom-text">{data} Shoes Shop Slenium</p>
         </div>
       </div>
     </footer>
