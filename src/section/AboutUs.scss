@@ -89,3 +89,48 @@
     color: black;
   }
 }
+@media (max-width: 900px) {
+  .aboutUs-container {
+    .aboutUs-description {
+      .aboutUs-title {
+        font-size: 2rem;
+      }
+      .aboutUs-description {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .aboutUs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 680px) {
+  .aboutUs-container {
+    .aboutUs-container-img {
+      width: 100%;
+    }
+    .aboutUs-description {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .aboutUs-container .aboutUs-description .btn-contactUs {
+    width: 100%;
+  }
+  .aboutUs-container {
+    .aboutUs-description {
+      .aboutUs-title {
+        font-size: 1.5rem;
+      }
+      .aboutUs-description {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}
