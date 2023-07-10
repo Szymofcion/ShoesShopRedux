@@ -89,7 +89,7 @@
     color: black;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 925px) {
   .aboutUs-container {
     .aboutUs-description {
       .aboutUs-title {
@@ -101,12 +101,23 @@
     }
   }
 }
+@media (max-width: 855px) {
+  .aboutUs-container-bottom-title {
+    font-size: 1.5rem;
+  }
+  .description-bottom {
+    font-size: 0.8rem;
+  }
+}
 @media (max-width: 800px) {
   .aboutUs-container {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .aboutUs-container-bottom{
+    flex-direction: column;
+    .aboutUs-container{}
   }
 }
 @media (max-width: 680px) {

@@ -29,17 +29,21 @@ const AboutUs = () => {
         <div className="aboutUs-container">
           <div className="aboutUs-container-index">
             <BsChatLeftHeart className="aboutUs-icon" />
-            <h3 className="fs-2 mb-3">Original Brands</h3>
+            <h3 className="aboutUs-container-bottom-title mb-3">
+              Original Brands
+            </h3>
             <span className="description-bottom">
               We bring the right people together to challenge established
               thinking and drive transform in 2020
             </span>
           </div>
         </div>
-        <div className="aboutUs-container ">
+        <div className="aboutUs-container">
           <div className="aboutUs-container-index">
             <BsTrophy className="aboutUs-icon" />
-            <h3 className="fs-2 mb-3">Global Awards</h3>
+            <h3 className="aboutUs-container-bottom-title mb-3">
+              Global Awards
+            </h3>
             <span className="description-bottom">
               Global Awards We bring the right people together to challenge
               established thinking and drive transform in 2020
@@ -47,9 +51,11 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="aboutUs-container">
-          <div className="aboutUs-container-index ">
+          <div className="aboutUs-container-index">
             <BsShieldShaded className="aboutUs-icon" />
-            <h3 className="fs-2 mb-3">Secure Payment</h3>
+            <h3 className="aboutUs-container-bottom-title mb-3">
+              Secure Payment
+            </h3>
             <span className="description-bottom">
               Global Awards We bring the right people together to challenge
               established thinking and drive transform in 2020
