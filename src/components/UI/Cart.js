@@ -9,10 +9,6 @@ import Button from "@mui/material/Button";
 import CartItems from "./CartItems";
 import CartContext from "../../store/cart-context";
 
-// const Backdrop = () => {
-//   return <div className="backdrop"></div>;
-// };
-
 const Cart = ({ hideCartHandler, open, close }) => {
   const handleClose = () => {
     close(false);
@@ -30,7 +26,7 @@ const Cart = ({ hideCartHandler, open, close }) => {
       open={open}
       onClose={hideCartHandler}
       aria-labelledby="responsive-dialog-title"
-      className="dailog "
+      className="dialog"
     >
       <DialogTitle className="dialog-background" id="responsive-dialog-title">
         Your Cart

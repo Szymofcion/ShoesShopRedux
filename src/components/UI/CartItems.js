@@ -9,7 +9,7 @@ const CartItems = (props) => {
             className="cart__container-btn"
             onClick={props.cartItemRemoveHandler}
           >
-            -
+            ➖
           </button>
         </li>
       </ul>
