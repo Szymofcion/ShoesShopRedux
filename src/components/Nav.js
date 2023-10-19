@@ -16,14 +16,13 @@ const Nav = ({ showCartHandler }) => {
     };
 
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 780);
-      setIsMenuOpen(false); // Zamknij menu po zmianie szerokości ekranu
+      setIsMobile(window.innerWidth <= 804);
+      setIsMenuOpen(false);
     };
 
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
 
-    // Inicjalizacja stanu na początku
     handleResize();
 
     return () => {
@@ -41,7 +40,7 @@ const Nav = ({ showCartHandler }) => {
       className={`navbar${isScrolled ? " scrolled" : ""}`}
       data-bs-theme="dark"
     >
-      <div className="container-fluid justify-content-between d-flex justify-content-center mt-4">
+      <div className="container-fluid  ">
         <img className="logo" src={logo} alt="logo" />
         {isMobile ? (
           <button id="nav-icon1" className="menu-toggle" onClick={toggleMenu}>
@@ -49,16 +48,16 @@ const Nav = ({ showCartHandler }) => {
           </button>
         ) : (
           <div className={`nav-link-container${isMenuOpen ? " open" : ""}`}>
-            <a href="/" className="nav-link mx-3" onClick={toggleMenu}>
+            <a href="#home" className="nav-link mx-3" onClick={toggleMenu}>
               Home
             </a>
-            <a href="/popular" className="nav-link mx-3" onClick={toggleMenu}>
+            <a href="#popular" className="nav-link mx-3" onClick={toggleMenu}>
               Popular products
             </a>
-            <a href="/about" className="nav-link mx-3" onClick={toggleMenu}>
+            <a href="#aboutUs" className="nav-link mx-3" onClick={toggleMenu}>
               About
             </a>
-            <a href="/contact" className="nav-link mx-3" onClick={toggleMenu}>
+            <a href="#contact" className="nav-link mx-3" onClick={toggleMenu}>
               Contact Us
             </a>
           </div>

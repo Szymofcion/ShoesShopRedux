@@ -106,7 +106,7 @@ const PopularProductsSlick = () => {
     ],
   };
   return (
-    <section id="popularProducts">
+    <section id="popular">
       <div>
         <h2>
           Popular <span className="text-danger">Products</span>

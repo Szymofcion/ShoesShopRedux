@@ -3,16 +3,18 @@
   height: 100%;
 }
 .rigth-banner {
+  position: relative;
   width: 50%;
+  overflow-x: hidden;
 }
 .left-banner {
   width: 50%;
 }
 .shoes-banner {
   position: absolute;
-  left: 20%;
-  top: -15%;
-  scale: 0.5;
+  scale: 0.9;
+  right: -100px;
+  top: -50px;
   height: 100%;
   transform: rotate(347deg);
 }
@@ -76,13 +78,6 @@
   .title-banner {
     font-size: 4.1rem;
   }
-  .rigth-banner {
-    .shoes-banner {
-      left: 7%;
-      top: -15%;
-      scale: 0.45;
-    }
-  }
 }
 @media (max-width: 1250px) {
   .title-banner {
@@ -93,13 +88,6 @@
   .title-banner {
     font-size: 3.7rem;
   }
-  .rigth-banner {
-    .shoes-banner {
-      left: -5%;
-      top: -15%;
-      scale: 0.4;
-    }
-  }
 }
 @media (max-width: 1000px) {
   .rwd-special-offer {
@@ -109,25 +97,10 @@
   .rwd-special-offer-description {
     font-size: 0.8rem;
   }
-  .rigth-banner {
-    .shoes-banner {
-      left: -16%;
-      top: -15%;
-      scale: 0.38;
-    }
-  }
 }
 @media (max-width: 850px) {
   .title-banner {
     font-size: 3rem;
-  }
-  
-  .rigth-banner {
-    .shoes-banner {
-      left: -30%;
-      top: -15%;
-      scale: 0.38;
-    }
   }
 }
 @media (max-width: 768px) {
@@ -141,13 +114,6 @@
   .descriptions-banner {
     font-size: 0.8rem;
   }
-  .rigth-banner {
-    .shoes-banner {
-      left: -40%;
-      top: -20%;
-      scale: 0.3;
-    }
-  }
   .rwd-special-offer {
     font-size: 0.85rem;
     margin-bottom: 0.3em;
@@ -158,18 +124,12 @@
   }
 }
 @media (max-width: 670px) {
-  .rigth-banner {
-    .shoes-banner {
-      left: -50%;
-      top: -20%;
-      scale: 0.27;
-    }
-  }
   .total-rwd {
     font-size: 0.7rem;
   }
 }
 @media (max-width: 620px) {
+
   .title-banner {
     font-size: 2rem;
   }
@@ -178,9 +138,6 @@
   }
   .rigth-banner {
     .shoes-banner {
-      left: -70%;
-      top: -21%;
-      scale: 0.22;
     }
   }
   .total-rwd {
@@ -188,13 +145,6 @@
   }
 }
 @media (max-width: 530px) {
-  .rigth-banner {
-    .shoes-banner {
-      left: -85%;
-      top: -24%;
-      scale: 0.2;
-    }
-  }
   .total-rwd {
     font-size: 0.7rem;
   }
@@ -212,26 +162,11 @@
   }
 }
 @media (max-width: 490px) {
-  .rigth-banner {
-    .shoes-banner {
-      left: -98%;
-      top: -22%;
-      scale: 0.2;
-    }
-  }
-  
 }
 @media (max-width: 460px) {
-  .rigth-banner {
-    .shoes-banner {
-      left: -109%;
-      top: -22%;
-      scale: 0.2;
-    }
-  }
   .rwd-special-offer {
     font-size: 0.6rem;
-  margin-bottom: 0;
+    margin-bottom: 0;
   }
   .rwd-special-offer-description {
     font-size: 0.5rem;
@@ -240,40 +175,29 @@
   }
 }
 @media (max-width: 430px) {
-  .rigth-banner {
-    .shoes-banner {
-      left: -122%;
-      top: -22%;
-      scale: 0.17;
-    }
-  }
-  .title-banner{
+  .title-banner {
     font-size: 1.7rem;
   }
- .btn-banner{
-padding: 0.5em 0.9em;
-font-size: 0.7em;
- }
+  .btn-banner {
+    padding: 0.5em 0.9em;
+    font-size: 0.7em;
+  }
+  .rigth-banner {
+    .shoes-banner {
+      scale: 0.6;
+    }
+  }
 }
 @media (max-width: 400px) {
-  .rigth-banner {
-    .shoes-banner {
-      left: -80%;
-      top: -15%;
-      scale: 0.24;
-    }
-  }
- 
 }
 @media (max-width: 370px) {
-  .rigth-banner {
-    .shoes-banner {
-      left: -150%;
-      top: -23%;
-      scale: 0.17;
-    }
-  }
-  .total-rwd{
+  .total-rwd {
     font-size: 0.7rem;
+  }
+  .rigth-banner {
+    right: 0;
+    .shoes-banner {
+      scale: 0.7;
+    }
   }
 }

@@ -21,9 +21,9 @@ const Main = () => {
   };
 
   return (
-    <section id="home" className="wrapper">
-      <CartProvider>
-        <Nav showCartHandler={showCartHandler} />
+    <CartProvider>
+      <Nav showCartHandler={showCartHandler} />
+      <div id="home" className="wrapper">
         <Banner />
         <PopularProducts />
         <Cart
@@ -31,11 +31,11 @@ const Main = () => {
           open={visibleModal}
           close={setVisibleModal}
         />
-      </CartProvider>
-      <AboutUs />
-      <ContactForm />
-      <Footer />
-    </section>
+        <AboutUs />
+        <ContactForm />
+        <Footer />
+      </div>
+    </CartProvider>
   );
 };
 export default Main;
